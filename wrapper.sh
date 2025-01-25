@@ -44,6 +44,7 @@ then
         if [ $? -ne 0 ]
         then
                 echo mam_id passed on command line is invalid
+                cat /tmp/MAM.output
                 exit 1
         else
                 grep mam_id ${COOKIEFILE} > /dev/null 2>/dev/null
